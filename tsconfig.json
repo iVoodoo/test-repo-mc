@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@components": ["./components"],
+      "@pages": ["./pages"],
+      "@routes": ["./routes"],
+      "@store": ["./store"],
+      "@styles/*": ["./styles/*"],
+      "@assets/*": ["./assets/*"],
+      "@types": ["./types"],
+      "@hooks": ["./hooks"],
+      "@apollo-graphql": ["./apollo-graphql"],
+      "@reduxStore/*": ["./reduxStore/*"],
+      "@services/*": ["./services/*"], 
+      "@utils/api": ["./utils/api"],
+      "@utils/constants": ["./utils/constants"],  
+      "@utils/helpers": ["./utils/helpers"],  
+    }
+  },
+  "include": [
+   "**/*.ts", "**/*.tsx"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
